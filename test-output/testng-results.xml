@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29944" started-at="2021-07-10T16:27:24Z" finished-at="2021-07-10T16:27:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="29944" started-at="2021-07-10T16:27:24Z" finished-at="2021-07-10T16:27:54Z">
+      <class name="com.tmb.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="10398" started-at="2021-07-10T21:57:24Z" finished-at="2021-07-10T21:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="loginTest" duration-ms="7773" started-at="2021-07-10T21:57:35Z" finished-at="2021-07-10T21:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="746" started-at="2021-07-10T21:57:42Z" finished-at="2021-07-10T21:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="10198" started-at="2021-07-10T21:57:43Z" finished-at="2021-07-10T21:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLoginPageTitle()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="validateLoginPageTitle" duration-ms="19" started-at="2021-07-10T21:57:53Z" finished-at="2021-07-10T21:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="750" started-at="2021-07-10T21:57:53Z" finished-at="2021-07-10T21:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tmb.tests.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
