@@ -2,36 +2,38 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29944" started-at="2021-07-10T16:27:24Z" finished-at="2021-07-10T16:27:54Z">
+  <suite name="Suite" duration-ms="25611" started-at="2021-07-16T07:47:30Z" finished-at="2021-07-16T07:47:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29944" started-at="2021-07-10T16:27:24Z" finished-at="2021-07-10T16:27:54Z">
+    <test name="Test" duration-ms="25611" started-at="2021-07-16T07:47:30Z" finished-at="2021-07-16T07:47:55Z">
       <class name="com.tmb.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="10398" started-at="2021-07-10T21:57:24Z" finished-at="2021-07-10T21:57:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@29774679]" name="setUp" is-config="true" duration-ms="15740" started-at="2021-07-16T13:17:30Z" finished-at="2021-07-16T13:17:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="loginTest" duration-ms="7773" started-at="2021-07-10T21:57:35Z" finished-at="2021-07-10T21:57:42Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.tmb.tests.LoginPageTest@29774679]" name="loginTest" duration-ms="8166" started-at="2021-07-16T13:17:46Z" finished-at="2021-07-16T13:17:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="746" started-at="2021-07-10T21:57:42Z" finished-at="2021-07-10T21:57:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="10198" started-at="2021-07-10T21:57:43Z" finished-at="2021-07-10T21:57:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateLoginPageTitle()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="validateLoginPageTitle" duration-ms="19" started-at="2021-07-10T21:57:53Z" finished-at="2021-07-10T21:57:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="750" started-at="2021-07-10T21:57:53Z" finished-at="2021-07-10T21:57:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@29774679]" name="tearDown" is-config="true" duration-ms="1361" started-at="2021-07-16T13:17:54Z" finished-at="2021-07-16T13:17:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tmb.tests.LoginPageTest -->
+      <class name="com.tmb.tests.OrangeHRMHomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="16588" started-at="2021-07-16T13:17:30Z" finished-at="2021-07-16T13:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateDashBoard()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@3ffc5af1]" name="validateDashBoard" duration-ms="7663" started-at="2021-07-16T13:17:46Z" finished-at="2021-07-16T13:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDashBoard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="1272" started-at="2021-07-16T13:17:54Z" finished-at="2021-07-16T13:17:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tmb.tests.OrangeHRMHomePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -6,10 +6,17 @@
       <class name="com.tmb.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validateLoginPageTitle"/>
           <include name="setUp"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- com.tmb.tests.LoginPageTest -->
+      <class name="com.tmb.tests.OrangeHRMHomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateDashBoard"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tmb.tests.OrangeHRMHomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

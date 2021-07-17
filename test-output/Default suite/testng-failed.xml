@@ -6,8 +6,8 @@
       <class name="com.tmb.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validateLoginPageTitle"/>
           <include name="setUp"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- com.tmb.tests.LoginPageTest -->
     </classes>

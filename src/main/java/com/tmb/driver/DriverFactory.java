@@ -1,31 +1,39 @@
 package com.tmb.driver;
 
+import java.io.IOException;
 import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.utils.ReadPropertyFile;
 
-public class DriverFactory {
-	
-	public static WebDriver driver;
-	 public static void initDriver() {
-		 if(Objects.isNull(driver)) {
-			 System.setProperty("webdriver.chrome.driver",FrameworkConstants.getChromedriverpath());
-				driver = new ChromeDriver();
-				driver.manage().window().maximize();
-				driver.get("https://opensource-demo.orangehrmlive.com/");
-		 }
-		 
-	 }
-	 public static void quitDriver() {
-		 if(Objects.nonNull(driver)) {
-			 driver.quit();
-			 driver=null;
-		 }
-		
-	 }
+public final class DriverFactory {
+
+	private DriverFactory() {
+
+	}
+
+	private static WebDriver driver;
+
+	public static void initDriver() throws Exception {
+		if (Objects.isNull(DriverManager.getDriver())) {
+			System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromedriverpath());
+			driver = new ChromeDriver();
+			DriverManager.setDriver(driver);
+			DriverManager.getDriver().manage().window().maximize();
+			DriverManager.getDriver().get(ReadPropertyFile.getValue("url"));
+		}
+
+	}
+
+	public static void quitDriver() {
+		if (Objects.nonNull(DriverManager.getDriver())) {
+			DriverManager.getDriver().quit();
+			DriverManager.unLoad();
+		}
+
+	}
 
 }

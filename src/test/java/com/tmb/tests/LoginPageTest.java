@@ -5,29 +5,21 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 import com.tmb.driver.DriverFactory;
+import com.tmb.driver.DriverManager;
 
-public final class LoginPageTest extends BaseTest{
-	
+public final class LoginPageTest extends BaseTest {
+
 	private LoginPageTest() {
-		
-	}
 
+	}
 
 	@Test
 	public void loginTest() {
 
-
-		DriverFactory.driver.findElement(By.id("txtUsername")).sendKeys("Admin");
-		DriverFactory.driver.findElement(By.id("txtPassword")).sendKeys("admin123",Keys.ENTER);
+		DriverManager.getDriver().findElement(By.id("txtUsername")).sendKeys("Admin");
+		DriverManager.getDriver().findElement(By.id("txtPassword")).sendKeys("admin123", Keys.ENTER);
 
 	}
 
-	@Test
-	public void validateLoginPageTitle() {
 
-
-		System.out.println(DriverFactory.driver.getTitle());
-
-
-}
 }
