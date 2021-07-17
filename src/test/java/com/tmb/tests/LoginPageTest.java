@@ -1,11 +1,9 @@
 package com.tmb.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.tmb.driver.DriverFactory;
-import com.tmb.driver.DriverManager;
+import com.tmb.pages.OrangeHRMLoginPage;
 
 public final class LoginPageTest extends BaseTest {
 
@@ -14,10 +12,16 @@ public final class LoginPageTest extends BaseTest {
 	}
 
 	@Test
-	public void loginTest() {
-
-		DriverManager.getDriver().findElement(By.id("txtUsername")).sendKeys("Admin");
-		DriverManager.getDriver().findElement(By.id("txtPassword")).sendKeys("admin123", Keys.ENTER);
+	public void loginLogoutTest() {
+		OrangeHRMLoginPage lgnPage = new OrangeHRMLoginPage();
+	boolean loginPanel=	lgnPage.enterUserName("Admin").
+		enterPassword("admin123").
+		doClick().clickWelcome()
+		.clickLogout()
+		.validatelogInPanelHeading();
+	Assert.assertEquals(loginPanel, true);
+		
+		
 
 	}
 
