@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23679" started-at="2021-07-17T14:44:53Z" finished-at="2021-07-17T14:45:16Z">
+  <suite name="Suite" duration-ms="20965" started-at="2021-07-18T06:40:15Z" finished-at="2021-07-18T06:40:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="23679" started-at="2021-07-17T14:44:53Z" finished-at="2021-07-17T14:45:16Z">
+    <test name="Test" duration-ms="20965" started-at="2021-07-18T06:40:15Z" finished-at="2021-07-18T06:40:36Z">
       <class name="com.tmb.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="12023" started-at="2021-07-17T20:14:53Z" finished-at="2021-07-17T20:15:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="8587" started-at="2021-07-18T12:10:15Z" finished-at="2021-07-18T12:10:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="loginLogoutTest" duration-ms="10812" started-at="2021-07-17T20:15:05Z" finished-at="2021-07-17T20:15:15Z">
+        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="loginLogoutTest" duration-ms="11478" started-at="2021-07-18T12:10:23Z" finished-at="2021-07-18T12:10:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="760" started-at="2021-07-17T20:15:15Z" finished-at="2021-07-17T20:15:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="833" started-at="2021-07-18T12:10:35Z" finished-at="2021-07-18T12:10:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

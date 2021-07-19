@@ -6,20 +6,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tmb.driver.DriverManager;
 
-public final class OrangeHRMHomePage {
+public final class OrangeHRMHomePage extends BasePage{
 	
 	private final By linkWelcome = By.id("welcome");
 	By logoutLink = By.xpath("//a[text()='Logout']");
 	
 	public OrangeHRMHomePage clickWelcome() {
 		
-		DriverManager.getDriver().findElement(linkWelcome).click();
+		doClick(linkWelcome);
 		return this;
 	}
 	public OrangeHRMLoginPage clickLogout() {
-		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 10);
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(logoutLink));
-		DriverManager.getDriver().findElement(logoutLink).click();
+	doClick(logoutLink);
 		return new OrangeHRMLoginPage();
 	}
 
