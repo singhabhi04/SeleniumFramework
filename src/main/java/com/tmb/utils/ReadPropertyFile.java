@@ -9,6 +9,7 @@ import java.util.Objects;
 import java.util.Properties;
 
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.enums.ConfigProperties;
 
 public final class ReadPropertyFile {
 	
@@ -34,16 +35,16 @@ public final class ReadPropertyFile {
 		catch(IOException e) {
 			e.printStackTrace();
 		}
-		
+		System.out.println(CONFIGMAP);
 	}
 	
-	public static String getValue(String key) throws Exception
+	public static String getValue(ConfigProperties key) throws Exception
 	{
-		
-		if(Objects.isNull(key)|| Objects.isNull(CONFIGMAP.get(key))) {
+		System.out.println("Key is : "+key);
+		if(Objects.isNull(key)|| Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
 			throw new Exception("Property name "+key+" is not available in config.properties");
 		}
-		return CONFIGMAP.get(key) ;
+		return CONFIGMAP.get(key.name().toLowerCase()) ;
 		
 	}
 }

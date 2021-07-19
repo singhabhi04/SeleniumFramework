@@ -5,6 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tmb.driver.DriverManager;
+import com.tmb.enums.WaitStrategy;
 
 public final class OrangeHRMHomePage extends BasePage{
 	
@@ -13,11 +14,11 @@ public final class OrangeHRMHomePage extends BasePage{
 	
 	public OrangeHRMHomePage clickWelcome() {
 		
-		doClick(linkWelcome);
+		doClick(linkWelcome,WaitStrategy.VISIBLE);
 		return this;
 	}
 	public OrangeHRMLoginPage clickLogout() {
-	doClick(logoutLink);
+	doClick(logoutLink,WaitStrategy.VISIBLE);
 		return new OrangeHRMLoginPage();
 	}
 

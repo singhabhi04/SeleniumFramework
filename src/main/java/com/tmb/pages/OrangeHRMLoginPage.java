@@ -3,6 +3,7 @@ package com.tmb.pages;
 import org.openqa.selenium.By;
 
 import com.tmb.driver.DriverManager;
+import com.tmb.enums.WaitStrategy;
 
 public final class OrangeHRMLoginPage extends BasePage {
 
@@ -12,21 +13,21 @@ public final class OrangeHRMLoginPage extends BasePage {
 	private final By logInPanelHeading = By.id("logInPanelHeading");
 
 	public OrangeHRMLoginPage enterUserName(String userName) {
-		doSendKeys(textBoxUserName, userName);
+		doSendKeys(textBoxUserName, userName,WaitStrategy.VISIBLE);
 
 		return this;
 
 	}
 
 	public OrangeHRMLoginPage enterPassword(String password) {
-		doSendKeys(textBoxPassword, password);
+		doSendKeys(textBoxPassword, password,WaitStrategy.VISIBLE);
 
 		return this;
 
 	}
 
 	public OrangeHRMHomePage doClick() {
-		doClick(loginBtn);
+		doClick(loginBtn,WaitStrategy.VISIBLE);
 		return new OrangeHRMHomePage();
 	}
 

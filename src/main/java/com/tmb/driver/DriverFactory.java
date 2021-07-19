@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.ReadPropertyFile;
 
 public final class DriverFactory {
@@ -23,7 +24,7 @@ public final class DriverFactory {
 			driver = new ChromeDriver();
 			DriverManager.setDriver(driver);
 			DriverManager.getDriver().manage().window().maximize();
-			DriverManager.getDriver().get(ReadPropertyFile.getValue("url"));
+			DriverManager.getDriver().get(ReadPropertyFile.getValue(ConfigProperties.URL));
 		}
 
 	}
