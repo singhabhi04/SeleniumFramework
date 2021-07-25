@@ -15,21 +15,21 @@ public final class OrangeHRMLoginPage extends BasePage {
 	private final By loginBtn = By.id("btnLogin");
 	private final By logInPanelHeading = By.id("logInPanelHeading");
 
-	public OrangeHRMLoginPage enterUserName(String userName) {
+	public OrangeHRMLoginPage enterUserName(String userName) throws Exception {
 		doSendKeys(textBoxUserName, userName, WaitStrategy.VISIBLE, "Username");
 
 		return this;
 
 	}
 
-	public OrangeHRMLoginPage enterPassword(String password) {
+	public OrangeHRMLoginPage enterPassword(String password)  {
 		doSendKeys(textBoxPassword, password, WaitStrategy.VISIBLE, "Password");
 
 		return this;
 
 	}
 
-	public OrangeHRMHomePage clickLoginButton() {
+	public OrangeHRMHomePage clickLoginButton() throws Exception {
 		doClick(loginBtn, WaitStrategy.VISIBLE, "Login button");
 
 		return new OrangeHRMHomePage();

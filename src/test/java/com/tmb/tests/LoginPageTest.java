@@ -13,7 +13,7 @@ public final class LoginPageTest extends BaseTest {
 	}
 
 	@Test
-	public void loginLogoutTest() {
+	public void loginLogoutTest() throws Exception  {
 		
 		OrangeHRMLoginPage lgnPage = new OrangeHRMLoginPage();
 		boolean loginPanel = lgnPage.enterUserName("Admin").enterPassword("admin123").clickLoginButton().clickWelcome()

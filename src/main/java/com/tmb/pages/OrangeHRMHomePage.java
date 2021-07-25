@@ -16,7 +16,7 @@ public final class OrangeHRMHomePage extends BasePage {
 	By logoutLink = By.xpath("//a[text()='Logout']");
 	By dashBoardSection = By.xpath("//h1[text()='Dashboard']");
 
-	public OrangeHRMHomePage clickWelcome() {
+	public OrangeHRMHomePage clickWelcome()  {
 
 		doClick(linkWelcome, WaitStrategy.VISIBLE," Welcome Link");
 		
@@ -29,8 +29,9 @@ public final class OrangeHRMHomePage extends BasePage {
 		return new OrangeHRMLoginPage();
 	}
 
-	public boolean validateHomePageDashBoard() {
-		ExtentLogger.pass("Home Page Dashboard is validated");
+	public boolean validateHomePageDashBoard() throws Exception {
+		
+		
 		return validateElementIsDisplayed(dashBoardSection);
 
 	}

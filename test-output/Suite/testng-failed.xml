@@ -6,13 +6,6 @@
   </listeners>
   <test name="Test(failed)" parallel="methods">
     <classes>
-      <class name="com.tmb.tests.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loginLogoutTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.tmb.tests.LoginPageTest -->
       <class name="com.tmb.tests.OrangeHRMHomePageTest">
         <methods>
           <include name="tearDown"/>

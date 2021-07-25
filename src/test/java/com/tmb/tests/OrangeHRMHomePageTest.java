@@ -10,13 +10,13 @@ import com.tmb.reports.ExtentReport;
 public class OrangeHRMHomePageTest extends BaseTest {
 
 	@Test
-	public void validateDashBoard() {
+	public void validateDashBoard() throws Exception {
 		
 
 		OrangeHRMLoginPage lgnPage = new OrangeHRMLoginPage();
 		boolean homePageDashboard = lgnPage.enterUserName("Admin").enterPassword("admin123").clickLoginButton()
 				.validateHomePageDashBoard();
-		Assert.assertEquals(homePageDashboard, true);
+		Assert.assertEquals(homePageDashboard, false);
 		OrangeHRMHomePage homePage = new OrangeHRMHomePage();
 		homePage.clickWelcome().clickLogout();
 		

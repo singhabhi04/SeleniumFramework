@@ -12,10 +12,15 @@ import com.tmb.reports.ExtentLogger;
 
 public class BasePage {
 
-	protected void doSendKeys(By by, String value, WaitStrategy  strategy,String webElementName) {
+	protected void doSendKeys(By by, String value, WaitStrategy  strategy,String webElementName)  {
 		doClear(by);
 		ExplicitWaitFactory.performExplicitWait(strategy, by).sendKeys(value);
-		ExtentLogger.pass(value +" is entered sucessfully in " +webElementName);
+		try {
+			ExtentLogger.pass(value +" is entered sucessfully in " +webElementName,true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	
 	}
 
@@ -23,9 +28,14 @@ public class BasePage {
 		DriverManager.getDriver().findElement(by).clear();
 	}
 
-	protected void doClick(By by, WaitStrategy  strategy,String webElementName) {
+	protected void doClick(By by, WaitStrategy  strategy,String webElementName)  {
 		ExplicitWaitFactory.performExplicitWait(strategy, by).click();
-		ExtentLogger.pass(webElementName+  " is clicked");
+		try {
+			ExtentLogger.pass(webElementName+  " is clicked",true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	
 	}
 
