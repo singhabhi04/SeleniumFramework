@@ -8,12 +8,14 @@ import com.tmb.constants.FrameworkConstants;
 import com.tmb.driver.DriverManager;
 import com.tmb.enums.WaitStrategy;
 import com.tmb.factories.ExplicitWaitFactory;
+import com.tmb.reports.ExtentLogger;
 
 public class BasePage {
 
-	protected void doSendKeys(By by, String value, WaitStrategy  strategy) {
+	protected void doSendKeys(By by, String value, WaitStrategy  strategy,String webElementName) {
 		doClear(by);
 		ExplicitWaitFactory.performExplicitWait(strategy, by).sendKeys(value);
+		ExtentLogger.pass(value +" is entered sucessfully in " +webElementName);
 	
 	}
 
@@ -21,19 +23,13 @@ public class BasePage {
 		DriverManager.getDriver().findElement(by).clear();
 	}
 
-	protected void doClick(By by, WaitStrategy  strategy) {
-		ExplicitWaitFactory.performExplicitWait(strategy, by).click();;
+	protected void doClick(By by, WaitStrategy  strategy,String webElementName) {
+		ExplicitWaitFactory.performExplicitWait(strategy, by).click();
+		ExtentLogger.pass(webElementName+  " is clicked");
 	
 	}
 
-	private void explicitWaitForVisibilityOfElementToBeLocated(By by) {
-		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitwaittime());
-		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-	}
-	private void explicitWaitForElementTobeClickable(By by) {
-		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getExplicitwaittime());
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-	}
+	
 	protected boolean validateElementIsDisplayed(By by) {
 		return DriverManager.getDriver().findElement(by).isDisplayed();
 

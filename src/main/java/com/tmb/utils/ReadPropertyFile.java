@@ -35,12 +35,12 @@ public final class ReadPropertyFile {
 		catch(IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println(CONFIGMAP);
+	
 	}
 	
 	public static String getValue(ConfigProperties key) throws Exception
 	{
-		System.out.println("Key is : "+key);
+		
 		if(Objects.isNull(key)|| Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
 			throw new Exception("Property name "+key+" is not available in config.properties");
 		}
