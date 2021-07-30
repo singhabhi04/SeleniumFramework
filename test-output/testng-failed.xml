@@ -3,16 +3,17 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.tmb.listners.ListnerClass"/>
+    <listener class-name="com.tmb.listners.MethodInterceptor"/>
   </listeners>
   <test name="Test(failed)" parallel="methods">
     <classes>
-      <class name="com.tmb.tests.OrangeHRMHomePageTest">
+      <class name="com.tmb.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validateDashBoard"/>
+          <include name="loginLogoutTest" invocation-numbers="1"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.tmb.tests.OrangeHRMHomePageTest -->
+      </class> <!-- com.tmb.tests.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

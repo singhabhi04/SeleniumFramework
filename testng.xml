@@ -3,13 +3,15 @@
 <suite name="Suite">
 <listeners>
 <listener class-name="com.tmb.listners.ListnerClass"/>
+<listener class-name="com.tmb.listners.MethodInterceptor"/>
+
 </listeners>
 
-  <test thread-count="2" name="Test" parallel="methods">
+  <test thread-count="1" name="Test" parallel="methods">
     <classes>
     
   <class name="com.tmb.tests.LoginPageTest"/> 
-       <class name="com.tmb.tests.OrangeHRMHomePageTest"/>
+      <class name="com.tmb.tests.OrangeHRMHomePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

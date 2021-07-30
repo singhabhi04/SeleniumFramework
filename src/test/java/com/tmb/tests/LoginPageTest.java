@@ -1,10 +1,13 @@
 package com.tmb.tests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tmb.pages.OrangeHRMLoginPage;
 import com.tmb.reports.ExtentReport;
+import com.tmb.utils.DataProviderUtils;
 
 public final class LoginPageTest extends BaseTest {
 
@@ -12,11 +15,11 @@ public final class LoginPageTest extends BaseTest {
 
 	}
 
-	@Test
-	public void loginLogoutTest() throws Exception  {
+	@Test(dataProvider="getData",dataProviderClass=DataProviderUtils.class)
+	public void loginLogoutTest(Map<String, String>data) throws Exception  {
 		
 		OrangeHRMLoginPage lgnPage = new OrangeHRMLoginPage();
-		boolean loginPanel = lgnPage.enterUserName("Admin").enterPassword("admin123").clickLoginButton().clickWelcome()
+		boolean loginPanel = lgnPage.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLoginButton().clickWelcome()
 				.clickLogout().validatelogInPanelHeading();
 		Assert.assertEquals(loginPanel, true);
 

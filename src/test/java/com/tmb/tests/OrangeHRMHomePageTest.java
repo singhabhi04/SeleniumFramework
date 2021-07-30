@@ -1,22 +1,25 @@
 package com.tmb.tests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tmb.pages.OrangeHRMHomePage;
 import com.tmb.pages.OrangeHRMLoginPage;
 import com.tmb.reports.ExtentReport;
+import com.tmb.utils.DataProviderUtils;
 
 public class OrangeHRMHomePageTest extends BaseTest {
 
-	@Test
-	public void validateDashBoard() throws Exception {
+	@Test(dataProvider="getData",dataProviderClass=DataProviderUtils.class)
+	public void validateHomePageDashBoardTest(Map<String, String>data) throws Exception {
 		
 
 		OrangeHRMLoginPage lgnPage = new OrangeHRMLoginPage();
-		boolean homePageDashboard = lgnPage.enterUserName("Admin").enterPassword("admin123").clickLoginButton()
+		boolean homePageDashboard = lgnPage.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLoginButton()
 				.validateHomePageDashBoard();
-		Assert.assertEquals(homePageDashboard, false);
+		Assert.assertEquals(homePageDashboard, true);
 		OrangeHRMHomePage homePage = new OrangeHRMHomePage();
 		homePage.clickWelcome().clickLogout();
 		

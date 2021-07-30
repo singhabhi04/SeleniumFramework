@@ -52,8 +52,9 @@ public class ListnerClass implements ITestListener, ISuiteListener{
 		
 		try {
 			ExtentLogger.fail(result.getMethod().getMethodName()+" is failed", true);
+			ExtentLogger.fail(result.getThrowable().toString());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

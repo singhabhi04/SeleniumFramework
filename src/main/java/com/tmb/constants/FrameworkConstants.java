@@ -15,6 +15,12 @@ public final class FrameworkConstants {
 	private static final int EXPLICITWAITTIME = 10;
 	private static final String EXTENTREPORTPATH = System.getProperty("user.dir") + "/extent-test-output";
 	private static  String extentReportFilePath="";
+	private static final String TESTSCRIPTEXCELPATH =RESOURCESPATH+"/excel/TestScript.xlsx";
+	
+	
+
+	
+
 	
 
 	public static String getExtentReportFilePath() throws Exception  {
@@ -43,6 +49,10 @@ public final class FrameworkConstants {
 
 	public static String getConfigfilepath() {
 		return CONFIGFILEPATH;
+	}
+	
+	public static String getTESTSCRIPTEXCELPATH() {
+		return TESTSCRIPTEXCELPATH;
 	}
 
 }
