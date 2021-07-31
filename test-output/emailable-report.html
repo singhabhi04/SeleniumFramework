@@ -9,29 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">129,646</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">230,333</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tmb.tests.LoginPageTest</td><td><a href="#m0">loginLogoutTest</a></td><td rowspan="1">1627625035468</td><td rowspan="1">14635</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.tmb.tests.LoginPageTest</td><td><a href="#m1">loginLogoutTest</a></td><td rowspan="2">1627625000911</td><td rowspan="2">18456</td></tr><tr class="passedeven"><td><a href="#m2">loginLogoutTest</a></td></tr><tr class="passedodd"><td rowspan="2">com.tmb.tests.OrangeHRMHomePageTest</td><td><a href="#m3">validateHomePageDashBoardTest</a></td><td rowspan="2">1627625083259</td><td rowspan="2">11681</td></tr><tr class="passedodd"><td><a href="#m4">validateHomePageDashBoardTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tmb.tests.LoginPageTest</td><td><a href="#m0">loginLogoutTest</a></td><td rowspan="1">1627745130283</td><td rowspan="1">24607</td></tr><tr class="failedodd"><td rowspan="1">com.tmb.tests.OrangeHRMHomePageTest</td><td><a href="#m1">validateHomePageDashBoardTest</a></td><td rowspan="1">1627745240531</td><td rowspan="1">4799</td></tr><tr class="failedeven"><td rowspan="1">com.tmb.tests.UpdateMyInfoTest</td><td><a href="#m2">validateUpdateMyInfoTest</a></td><td rowspan="1">1627745289549</td><td rowspan="1">31055</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.tmb.tests.LoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: welcome (tried for 10 second(s) with 500 milliseconds interval)
+<h2>Test</h2><h3 id="m0">com.tmb.tests.LoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, username=Admin, lastname=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;Logout&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at com.tmb.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:22)
-	at com.tmb.pages.BasePage.doClick(BasePage.java:32)
-	at com.tmb.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:21)
-	at com.tmb.tests.LoginPageTest.loginLogoutTest(LoginPageTest.java:22)
+	at com.tmb.pages.BasePage.doClick(BasePage.java:33)
+	at com.tmb.pages.OrangeHRMHomePage.clickLogout(OrangeHRMHomePage.java:28)
+	at com.tmb.tests.LoginPageTest.loginLogoutTest(LoginPageTest.java:24)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#welcome&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Logout&apos;]&quot;}
   (Session info: chrome=92.0.4515.107)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.35&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.191&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c7174c6352e6ec823a4611a222c6a758
-*** Element info: {Using=id, value=welcome}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 528d4a89b80b74934c2cf1dd5a604700
+*** Element info: {Using=xpath, value=//a[text()=&apos;Logout&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -39,17 +39,52 @@ Session ID: c7174c6352e6ec823a4611a222c6a758
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 17 more
 ... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.tmb.tests.LoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.tmb.tests.LoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.tmb.tests.OrangeHRMHomePageTest#validateHomePageDashBoardTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.tmb.tests.OrangeHRMHomePageTest#validateHomePageDashBoardTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tmb.tests.OrangeHRMHomePageTest#validateHomePageDashBoardTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin1, lastname=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Dashboard&apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.191&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6e03c666d2eec794d9bb6f449bf79f3
+*** Element info: {Using=xpath, value=//h1[text()=&apos;Dashboard&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tmb.pages.BasePage.validateElementIsDisplayed(BasePage.java:45)
+	at com.tmb.pages.OrangeHRMHomePage.validateHomePageDashBoard(OrangeHRMHomePage.java:36)
+	at com.tmb.tests.OrangeHRMHomePageTest.validateHomePageDashBoardTest(OrangeHRMHomePageTest.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tmb.tests.UpdateMyInfoTest#validateUpdateMyInfoTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateMyInfoTest, execute=Yes, username=Admin, lastname=Singh}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Indian
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.191&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.tmb.pages.BasePage.selectValueFromDropDown(BasePage.java:51)
+	at com.tmb.pages.OrangeHRMMyInfoPage.selectNationalityDropdown(OrangeHRMMyInfoPage.java:41)
+	at com.tmb.tests.UpdateMyInfoTest.validateUpdateMyInfoTest(UpdateMyInfoTest.java:19)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

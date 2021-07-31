@@ -46,5 +46,16 @@ public  final class ExtentReport {
 			e.printStackTrace();
 		}
 	}
+	public static void addAuthors(String[] authors) {
+		for(String temp:authors) {
+			ExtentReportManager.getExtentTest().assignAuthor(temp);
+		}
+	}
+	
+	public static void addCategory(String[] category) {
+		for(String temp:category) {
+			ExtentReportManager.getExtentTest().assignCategory(temp);
+		}
+	}
 
 }

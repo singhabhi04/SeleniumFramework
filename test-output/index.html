@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,39 +102,20 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.LoginPageTest" hash-for-method="loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1})">loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.LoginPageTest" hash-for-method="loginLogoutTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, usern...)">loginLogoutTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, usern...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.OrangeHRMHomePageTest" hash-for-method="validateHomePageDashBoardTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, exec...)">validateHomePageDashBoardTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, exec...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.UpdateMyInfoTest" hash-for-method="validateUpdateMyInfoTest({empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateM...)">validateUpdateMyInfoTest({empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateM...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.LoginPageTest" hash-for-method="loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})">loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.LoginPageTest" hash-for-method="loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})">loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.OrangeHRMHomePageTest" hash-for-method="validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})">validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tmb.tests.OrangeHRMHomePageTest" hash-for-method="validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})">validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -149,34 +130,54 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.tmb.tests.LoginPageTest</span>
+              <span class="class-name">com.tmb.tests.UpdateMyInfoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1})">
-                  </a> <!-- loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1}) -->
-                  <span class="method-name">loginLogoutTest</span>
-                  <span class="parameters">({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: welcome (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.tmb.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:22)
-	at com.tmb.pages.BasePage.doClick(BasePage.java:32)
-	at com.tmb.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:21)
-	at com.tmb.tests.LoginPageTest.loginLogoutTest(LoginPageTest.java:22)
+                  <a name="validateUpdateMyInfoTest({empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateM...)">
+                  </a> <!-- validateUpdateMyInfoTest({empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateM...) -->
+                  <span class="method-name">validateUpdateMyInfoTest</span>
+                  <span class="parameters">({empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateMyInfoTest, execute=Yes, username=Admin, lastname=Singh})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Indian
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.191&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.tmb.pages.BasePage.selectValueFromDropDown(BasePage.java:51)
+	at com.tmb.pages.OrangeHRMMyInfoPage.selectNationalityDropdown(OrangeHRMMyInfoPage.java:41)
+	at com.tmb.tests.UpdateMyInfoTest.validateUpdateMyInfoTest(UpdateMyInfoTest.java:19)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#welcome&quot;}
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tmb.tests.OrangeHRMHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHomePageDashBoardTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, exec...)">
+                  </a> <!-- validateHomePageDashBoardTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, exec...) -->
+                  <span class="method-name">validateHomePageDashBoardTest</span>
+                  <span class="parameters">({empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin1, lastname=})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Dashboard&apos;]&quot;}
   (Session info: chrome=92.0.4515.107)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.35&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.191&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c7174c6352e6ec823a4611a222c6a758
-*** Element info: {Using=id, value=welcome}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6e03c666d2eec794d9bb6f449bf79f3
+*** Element info: {Using=xpath, value=//h1[text()=&apos;Dashboard&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -184,8 +185,61 @@ Session ID: c7174c6352e6ec823a4611a222c6a758
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tmb.pages.BasePage.validateElementIsDisplayed(BasePage.java:45)
+	at com.tmb.pages.OrangeHRMHomePage.validateHomePageDashBoard(OrangeHRMHomePage.java:36)
+	at com.tmb.tests.OrangeHRMHomePageTest.validateHomePageDashBoardTest(OrangeHRMHomePageTest.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tmb.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginLogoutTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, usern...)">
+                  </a> <!-- loginLogoutTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, usern...) -->
+                  <span class="method-name">loginLogoutTest</span>
+                  <span class="parameters">({empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, username=Admin, lastname=})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;Logout&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.tmb.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:22)
+	at com.tmb.pages.BasePage.doClick(BasePage.java:33)
+	at com.tmb.pages.OrangeHRMHomePage.clickLogout(OrangeHRMHomePage.java:28)
+	at com.tmb.tests.LoginPageTest.loginLogoutTest(LoginPageTest.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Logout&apos;]&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.225.191&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 528d4a89b80b74934c2cf1dd5a604700
+*** Element info: {Using=xpath, value=//a[text()=&apos;Logout&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
@@ -197,54 +251,6 @@ Session ID: c7174c6352e6ec823a4611a222c6a758
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tmb.tests.OrangeHRMHomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})">
-                  </a> <!-- validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin}) -->
-                  <span class="method-name">validateHomePageDashBoardTest</span>
-                  <span class="parameters">({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})">
-                  </a> <!-- validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin}) -->
-                  <span class="method-name">validateHomePageDashBoardTest</span>
-                  <span class="parameters">({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tmb.tests.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})">
-                  </a> <!-- loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin}) -->
-                  <span class="method-name">loginLogoutTest</span>
-                  <span class="parameters">({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})">
-                  </a> <!-- loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin}) -->
-                  <span class="method-name">loginLogoutTest</span>
-                  <span class="parameters">({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -263,6 +269,7 @@ Session ID: c7174c6352e6ec823a4611a222c6a758
     &lt;classes&gt;
       &lt;class name=&quot;com.tmb.tests.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.tmb.tests.OrangeHRMHomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.tmb.tests.UpdateMyInfoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -276,7 +283,7 @@ Session ID: c7174c6352e6ec823a4611a222c6a758
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,27 +309,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginLogoutTest')
-data.setCell(0, 2, 'com.tmb.tests.LoginPageTest')
-data.setCell(0, 3, 18456);
+data.setCell(0, 1, 'validateUpdateMyInfoTest')
+data.setCell(0, 2, 'com.tmb.tests.UpdateMyInfoTest')
+data.setCell(0, 3, 31055);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginLogoutTest')
 data.setCell(1, 2, 'com.tmb.tests.LoginPageTest')
-data.setCell(1, 3, 14635);
+data.setCell(1, 3, 24607);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginLogoutTest')
-data.setCell(2, 2, 'com.tmb.tests.LoginPageTest')
-data.setCell(2, 3, 11794);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateHomePageDashBoardTest')
-data.setCell(3, 2, 'com.tmb.tests.OrangeHRMHomePageTest')
-data.setCell(3, 3, 11681);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateHomePageDashBoardTest')
-data.setCell(4, 2, 'com.tmb.tests.OrangeHRMHomePageTest')
-data.setCell(4, 3, 11001);
+data.setCell(2, 1, 'validateHomePageDashBoardTest')
+data.setCell(2, 2, 'com.tmb.tests.OrangeHRMHomePageTest')
+data.setCell(2, 3, 4799);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -359,65 +358,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})</span>
-                <span class="method-start">11862 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">30322 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">31504 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin1})</span>
-                <span class="method-start">46419 ms</span>
+                <span class="method-name">loginLogoutTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, usern...)</span>
+                <span class="method-start">27379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61369 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">62229 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginLogoutTest({password=admin123, testname=loginLogoutTest, execute=Yes, username=Admin})</span>
-                <span class="method-start">72320 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">84117 ms</span>
+                <span class="method-start">52307 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tmb.tests.OrangeHRMHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">84984 ms</span>
+                <span class="method-start">58202 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})</span>
-                <span class="method-start">94210 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateHomePageDashBoardTest({empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, exec...)</span>
+                <span class="method-start">137627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">105894 ms</span>
+                <span class="method-start">142720 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tmb.tests.UpdateMyInfoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">106691 ms</span>
+                <span class="method-start">160459 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateHomePageDashBoardTest({password=admin123, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin})</span>
-                <span class="method-start">115955 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateUpdateMyInfoTest({empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateM...)</span>
+                <span class="method-start">186645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">126958 ms</span>
+                <span class="method-start">217992 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

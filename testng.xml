@@ -12,6 +12,7 @@
     
   <class name="com.tmb.tests.LoginPageTest"/> 
       <class name="com.tmb.tests.OrangeHRMHomePageTest"/>
+       <class name="com.tmb.tests.UpdateMyInfoTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

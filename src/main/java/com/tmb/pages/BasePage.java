@@ -2,6 +2,7 @@ package com.tmb.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tmb.constants.FrameworkConstants;
@@ -33,7 +34,7 @@ public class BasePage {
 		try {
 			ExtentLogger.pass(webElementName+  " is clicked",true);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	
@@ -43,6 +44,12 @@ public class BasePage {
 	protected boolean validateElementIsDisplayed(By by) {
 		return DriverManager.getDriver().findElement(by).isDisplayed();
 
+	}
+	protected void selectValueFromDropDown(By by,String value) {
+		doClick(by, WaitStrategy.CLICKABLE, "Nationality dropdown");
+		Select sc = new Select(DriverManager.getDriver().findElement(by));
+		sc.selectByVisibleText(value);
+		
 	}
 
 }

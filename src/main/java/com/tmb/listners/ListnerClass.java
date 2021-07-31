@@ -8,6 +8,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.tmb.annotations.FrameworkAnnotations;
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
 
@@ -38,6 +39,10 @@ public class ListnerClass implements ITestListener, ISuiteListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		ExtentReport.createTest(result.getMethod().getMethodName());
+		ExtentReport.addAuthors(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotations.class)
+				.author());
+			ExtentReport.addCategory(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotations.class)
+				.category());
 		
 	}
 

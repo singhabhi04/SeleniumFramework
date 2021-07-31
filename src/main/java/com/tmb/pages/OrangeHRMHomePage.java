@@ -15,6 +15,7 @@ public final class OrangeHRMHomePage extends BasePage {
 	private final By linkWelcome = By.id("welcome");
 	By logoutLink = By.xpath("//a[text()='Logout']");
 	By dashBoardSection = By.xpath("//h1[text()='Dashboard']");
+	private final By myInfoMenu = By.xpath("//a[@id='menu_pim_viewMyDetails']");
 
 	public OrangeHRMHomePage clickWelcome()  {
 
@@ -34,6 +35,10 @@ public final class OrangeHRMHomePage extends BasePage {
 		
 		return validateElementIsDisplayed(dashBoardSection);
 
+	}
+	public OrangeHRMMyInfoPage clickOnMyInfoMenu() {
+		doClick(myInfoMenu, WaitStrategy.VISIBLE,"My Info menu");
+		return new OrangeHRMMyInfoPage();
 	}
 
 }

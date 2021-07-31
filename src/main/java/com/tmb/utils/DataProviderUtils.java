@@ -14,6 +14,7 @@ public final class DataProviderUtils {
 	@DataProvider
 	public Object[] getData(Method m) {
 		String testname = m.getName();
+		
 		if (list.isEmpty()) {
 			list = ExcelUtils.getTestDetails("DATA");
 			System.out.println(list);

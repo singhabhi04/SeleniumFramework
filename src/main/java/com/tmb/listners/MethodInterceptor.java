@@ -24,7 +24,7 @@ public class MethodInterceptor implements IMethodInterceptor {
 		}
 
 		List<IMethodInstance> result = new ArrayList<>();
-
+System.out.println(list.size()+"*****"+methods.size());
 		for (int i = 0; i < methods.size(); i++) {
 			for (int j = 0; j < list.size(); j++) {
 				System.out.println(methods.get(i).getMethod().getMethodName());
