@@ -12,6 +12,8 @@ import java.util.Objects;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.tmb.FrameworkExceptions.FrameworkException;
+import com.tmb.FrameworkExceptions.InvalidPathForExcelException;
 import com.tmb.constants.FrameworkConstants;
 
 public final class ExcelUtils {
@@ -45,10 +47,10 @@ public final class ExcelUtils {
 
 		} catch (FileNotFoundException e) {
 
-			e.printStackTrace();
+			throw new InvalidPathForExcelException("Excel File you trying to read is not found");
 		} catch (IOException e) {
 
-			e.printStackTrace();
+			throw new FrameworkException("Some io exception happened  while reading excel file");
 		}
 
 		return list;

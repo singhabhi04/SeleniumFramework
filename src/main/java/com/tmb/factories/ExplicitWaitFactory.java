@@ -9,7 +9,10 @@ import com.tmb.constants.FrameworkConstants;
 import com.tmb.driver.DriverManager;
 import com.tmb.enums.WaitStrategy;
 
-public class ExplicitWaitFactory {
+public final class ExplicitWaitFactory {
+	private ExplicitWaitFactory() {
+			
+	}
 
 	public static WebElement performExplicitWait(WaitStrategy waitstrategy ,By by) {
 		WebElement element =null;

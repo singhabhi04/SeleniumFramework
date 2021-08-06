@@ -18,7 +18,7 @@ public  final class ExtentReport {
 	}
 	private static ExtentReports extent;
 	
-	public static void initReports() throws Exception {
+	public static void initReports()  {
 		if(Objects.isNull(extent)) {
 		extent = new ExtentReports();
 		ExtentSparkReporter spark = new ExtentSparkReporter(FrameworkConstants.getExtentReportFilePath());
@@ -34,7 +34,7 @@ public  final class ExtentReport {
 	ExtentReportManager.setDriver(test);
 		
 	}
-	public static void flushReports() throws IOException {
+	public static void flushReports() {
 		if(Objects.nonNull(extent)) {
 			extent.flush();
 		}

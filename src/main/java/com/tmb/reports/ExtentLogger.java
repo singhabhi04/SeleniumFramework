@@ -31,7 +31,7 @@ public final class ExtentLogger {
 		}
 	
 	}
-	public static void fail(String message,boolean isScreenShotNeeded) throws Exception {
+	public static void fail(String message,boolean isScreenShotNeeded)  {
 		if(ReadPropertyFile.getValue(ConfigProperties.FAILEDSTEPSSCREENSHOT).equalsIgnoreCase("Yes")){
 			ExtentReportManager.getExtentTest().fail(message, MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenShotUtils.getBase64Image()).build());
 		}

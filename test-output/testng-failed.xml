@@ -7,20 +7,6 @@
   </listeners>
   <test name="Test(failed)" parallel="methods">
     <classes>
-      <class name="com.tmb.tests.UpdateMyInfoTest">
-        <methods>
-          <include name="validateUpdateMyInfoTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.tmb.tests.UpdateMyInfoTest -->
-      <class name="com.tmb.tests.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loginLogoutTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.tmb.tests.LoginPageTest -->
       <class name="com.tmb.tests.OrangeHRMHomePageTest">
         <methods>
           <include name="tearDown"/>
