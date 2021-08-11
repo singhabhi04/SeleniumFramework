@@ -1,6 +1,5 @@
 package com.tmb.driver;
 
-import java.io.IOException;
 import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
@@ -10,6 +9,12 @@ import com.tmb.constants.FrameworkConstants;
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.ReadPropertyFile;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+/**
+ * 
+ * @author Abhishek Singh
+ *07-Aug-2021
+ */
 public final class DriverFactory {
 
 	private DriverFactory() {
@@ -20,7 +25,8 @@ public final class DriverFactory {
 
 	public static void initDriver() {
 		if (Objects.isNull(DriverManager.getDriver())) {
-			System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromedriverpath());
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromedriverpath());
 			driver = new ChromeDriver();
 			DriverManager.setDriver(driver);
 			DriverManager.getDriver().manage().window().maximize();

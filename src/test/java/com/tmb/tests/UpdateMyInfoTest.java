@@ -5,6 +5,7 @@ import java.util.Map;
 import org.testng.annotations.Test;
 
 import com.tmb.annotations.FrameworkAnnotations;
+import com.tmb.pages.OrangeHRMHomePage;
 import com.tmb.pages.OrangeHRMLoginPage;
 import com.tmb.utils.DataProviderUtils;
 
@@ -17,5 +18,8 @@ public  class UpdateMyInfoTest extends BaseTest {
 		lgnPage.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLoginButton()
 		.clickOnMyInfoMenu().clickOnEditBtn().enterFirstName(data.get("firstname")).
 		enterLastName(data.get("lastname")).enterEmpId(data.get("empid")).selectGenederRadioBtn().selectNationalityDropdown(data.get("dropdownvalue")).clickOnEditBtn();
+		OrangeHRMHomePage homePage = new OrangeHRMHomePage();
+		homePage.clickWelcome().clickLogout();
+	
 	}
 }

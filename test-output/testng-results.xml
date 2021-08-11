@@ -2,77 +2,77 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="94432" started-at="2021-08-06T06:09:46Z" finished-at="2021-08-06T06:11:20Z">
+  <suite name="Suite" duration-ms="79572" started-at="2021-08-11T01:41:17Z" finished-at="2021-08-11T01:42:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="94432" started-at="2021-08-06T06:09:46Z" finished-at="2021-08-06T06:11:20Z">
+    <test name="Test" duration-ms="79572" started-at="2021-08-11T01:41:17Z" finished-at="2021-08-11T01:42:37Z">
       <class name="com.tmb.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@3abbfa04]" name="setUp" is-config="true" duration-ms="18108" started-at="2021-08-06T11:39:47Z" finished-at="2021-08-06T11:40:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.LoginPageTest@73ad2d6]" name="setUp" is-config="true" duration-ms="14905" started-at="2021-08-11T07:11:21Z" finished-at="2021-08-11T07:11:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.LoginPageTest@3abbfa04]" name="loginLogoutTest" duration-ms="16021" started-at="2021-08-06T11:40:05Z" data-provider="getData" finished-at="2021-08-06T11:40:21Z">
+        <test-method status="PASS" signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.LoginPageTest@73ad2d6]" name="loginLogoutTest" duration-ms="15174" started-at="2021-08-11T07:11:36Z" data-provider="getData" finished-at="2021-08-11T07:11:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{empid=, password=admin123, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, username=Admin, lastname=}]]>
+                <![CDATA[{empid=, password=YWRtaW4xMjM=, firstname=, dropdownvalue=, testname=loginLogoutTest, execute=Yes, username=Admin, lastname=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="14311" started-at="2021-08-06T11:40:21Z" finished-at="2021-08-06T11:40:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginPageTest@73ad2d6]" name="tearDown" is-config="true" duration-ms="987" started-at="2021-08-11T07:11:51Z" finished-at="2021-08-11T07:11:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tmb.tests.LoginPageTest -->
       <class name="com.tmb.tests.UpdateMyInfoTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.UpdateMyInfoTest@31ef45e3]" name="setUp" is-config="true" duration-ms="8231" started-at="2021-08-06T11:40:56Z" finished-at="2021-08-06T11:41:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.UpdateMyInfoTest@1ce92674]" name="setUp" is-config="true" duration-ms="7869" started-at="2021-08-11T07:12:04Z" finished-at="2021-08-11T07:12:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateUpdateMyInfoTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateMyInfoTest@31ef45e3]" name="validateUpdateMyInfoTest" duration-ms="14707" started-at="2021-08-06T11:41:05Z" data-provider="getData" finished-at="2021-08-06T11:41:19Z">
+        <test-method status="PASS" signature="validateUpdateMyInfoTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateMyInfoTest@1ce92674]" name="validateUpdateMyInfoTest" duration-ms="23435" started-at="2021-08-11T07:12:12Z" data-provider="getData" finished-at="2021-08-11T07:12:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{empid=765507, password=admin123, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateMyInfoTest, execute=Yes, username=Admin, lastname=Singh}]]>
+                <![CDATA[{empid=765507, password=YWRtaW4xMjM=, firstname=Abhishek, dropdownvalue=Indian, testname=validateUpdateMyInfoTest, execute=Yes, username=Admin, lastname=Singh}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUpdateMyInfoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateMyInfoTest@31ef45e3]" name="tearDown" is-config="true" duration-ms="862" started-at="2021-08-06T11:41:19Z" finished-at="2021-08-06T11:41:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateMyInfoTest@1ce92674]" name="tearDown" is-config="true" duration-ms="1397" started-at="2021-08-11T07:12:36Z" finished-at="2021-08-11T07:12:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tmb.tests.UpdateMyInfoTest -->
       <class name="com.tmb.tests.OrangeHRMHomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@57fffcd7]" name="setUp" is-config="true" duration-ms="16967" started-at="2021-08-06T11:40:35Z" finished-at="2021-08-06T11:40:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@7085bdee]" name="setUp" is-config="true" duration-ms="7571" started-at="2021-08-11T07:11:52Z" finished-at="2021-08-11T07:12:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validateHomePageDashBoardTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@57fffcd7]" name="validateHomePageDashBoardTest" duration-ms="3141" started-at="2021-08-06T11:40:52Z" data-provider="getData" finished-at="2021-08-06T11:40:55Z">
+        <test-method status="FAIL" signature="validateHomePageDashBoardTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@7085bdee]" name="validateHomePageDashBoardTest" duration-ms="3621" started-at="2021-08-11T07:12:00Z" data-provider="getData" finished-at="2021-08-11T07:12:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{empid=, password=admin123, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin1, lastname=}]]>
+                <![CDATA[{empid=, password=YWRtaW4xMjM=, firstname=, dropdownvalue=, testname=validateHomePageDashBoardTest, execute=Yes, username=Admin1, lastname=}]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Dashboard']"}  (Session info: chrome=92.0.4515.131)For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'LENOVO', ip: '192.168.225.191', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}Session ID: 64cd82906d363a3396ccc5fad1ea8abc*** Element info: {Using=xpath, value=//h1[text()='Dashboard']}]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Dashboard']"}  (Session info: chrome=92.0.4515.131)For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'LENOVO', ip: '192.168.225.35', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}Session ID: d176cf4a271a26e967d9b2f92b68dac2*** Element info: {Using=xpath, value=//h1[text()='Dashboard']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Dashboard']"}  (Session info: chrome=92.0.4515.131)For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'LENOVO', ip: '192.168.225.191', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}Session ID: 64cd82906d363a3396ccc5fad1ea8abc*** Element info: {Using=xpath, value=//h1[text()='Dashboard']}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)at com.tmb.pages.BasePage.validateElementIsDisplayed(BasePage.java:45)at com.tmb.pages.OrangeHRMHomePage.validateHomePageDashBoard(OrangeHRMHomePage.java:36)at com.tmb.tests.OrangeHRMHomePageTest.validateHomePageDashBoardTest(OrangeHRMHomePageTest.java:22)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)at java.lang.Thread.run(Unknown Source)]]>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Dashboard']"}  (Session info: chrome=92.0.4515.131)For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'LENOVO', ip: '192.168.225.35', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\ABHISHEK\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}Session ID: d176cf4a271a26e967d9b2f92b68dac2*** Element info: {Using=xpath, value=//h1[text()='Dashboard']}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)at com.tmb.pages.BasePage.validateElementIsDisplayed(BasePage.java:51)at com.tmb.pages.OrangeHRMHomePage.validateHomePageDashBoard(OrangeHRMHomePage.java:36)at com.tmb.tests.OrangeHRMHomePageTest.validateHomePageDashBoardTest(OrangeHRMHomePageTest.java:22)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)at java.lang.Thread.run(Unknown Source)]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomePageDashBoardTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@57fffcd7]" name="tearDown" is-config="true" duration-ms="880" started-at="2021-08-06T11:40:56Z" finished-at="2021-08-06T11:40:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMHomePageTest@7085bdee]" name="tearDown" is-config="true" duration-ms="729" started-at="2021-08-11T07:12:04Z" finished-at="2021-08-11T07:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

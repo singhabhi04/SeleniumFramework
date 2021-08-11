@@ -7,6 +7,7 @@ import com.tmb.enums.WaitStrategy;
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
 import com.tmb.reports.ExtentReportManager;
+import com.tmb.utils.DecodeUtils;
 
 public final class OrangeHRMLoginPage extends BasePage {
 
@@ -23,7 +24,7 @@ public final class OrangeHRMLoginPage extends BasePage {
 	}
 
 	public OrangeHRMLoginPage enterPassword(String password)  {
-		doSendKeys(textBoxPassword, password, WaitStrategy.VISIBLE, "Password");
+		doSendKeys(textBoxPassword, DecodeUtils.getDecodedString(password), WaitStrategy.VISIBLE, "Password",true);
 
 		return this;
 

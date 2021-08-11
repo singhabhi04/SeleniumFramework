@@ -22,7 +22,7 @@ public final class ExtentLogger {
 		ExtentReportManager.getExtentTest().skip(message);
 	}
 
-	public static void pass(String message,boolean isScreenShotNeeded) throws Exception {
+	public static void pass(String message,boolean isScreenShotNeeded) {
 		if(ReadPropertyFile.getValue(ConfigProperties.PASSEDSTEPSSCREENSHOT).equalsIgnoreCase("Yes")){
 			ExtentReportManager.getExtentTest().pass(message, MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenShotUtils.getBase64Image()).build());
 		}
